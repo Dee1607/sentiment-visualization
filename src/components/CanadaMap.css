@@ -1,0 +1,15 @@
+/* .province {
+  fill: lightblue;
+} */
+
+.province {
+  transition-duration: 250ms;
+}
+
+.province:hover {
+  fill-opacity: 0.6;
+}
+
+.province__selected {
+  fill-opacity: 1 !important;
+}
