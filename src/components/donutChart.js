@@ -42,7 +42,7 @@ class DonutChart extends Component {
         let pie = d3.pie()
             .value( d => d.percentage )
         let data_ready = pie(data)
- 
+        console.log(data)
         // Donut partition  
         svg
         .selectAll('whatever')

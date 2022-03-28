@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import "./Province.css";
 
 // import * as d3 from 'd3';
@@ -22,7 +23,8 @@ class Province extends Component {
 
   handleClick(id) {
     this.setState({ fill: "green" });
-    this.props.onSelect(id);  
+    this.props.onSelect(id);
+    this.props.history.push({pathname:'/pieChart/'+id, state:id})  
     // this.drawChart()
   }
 
@@ -118,4 +120,4 @@ class Province extends Component {
   }
 }
 
-export default Province;
+export default withRouter (Province);

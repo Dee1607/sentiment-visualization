@@ -1,5 +1,9 @@
 import React from "react";
+import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
 import CanadaMap from "./components/CanadaMap";
+import PieChart from "./components/PieChart";
+import Header from "./container/Header"
+import Footer from "./container/Footer"
 import "./styles.css";
 import DonutChart from './components/donutChart';
 import CanadaJSON from "./components/CanadaMap.json";
@@ -43,15 +47,41 @@ export default function App() {
   }
   return (
     <div className="App">
+      <div>
+        <Router>
+        <Header />
+          <div>
+            <Switch>
+              <Route exact path="/">
+                <CanadaMap mapJson={CanadaJSON}  width="760"
+                  height="620"
+                  viewBox="0 0 760 620"/>
+              </Route>
+              <Route exact path="/province">
+                <div>
+                  <p>Chart</p>
+                  <DonutChart data={DonutJSON} />
+                </div>
+              </Route>
+              <Route exact path="/pieChart">
+                <div>
+                  <PieChart data={DonutJSON} />
+                </div>
+              </Route>
+              <Route path="/pieChart/:id">
+                <div>
+                  <PieChart data={DonutJSON} />
+                </div>
+              </Route>
+            </Switch>
+          </div>
+          <Footer />              
+        </Router>
+      </div>
+
       <button onClick={handleClick}>{show} Donut</button>
       { visible ? <Chart /> : null }
 
-      <CanadaMap
-        mapJson={CanadaJSON}
-        width="760"
-        height="620"
-        viewBox="0 0 760 620"
-      />
     </div>
   );
 }

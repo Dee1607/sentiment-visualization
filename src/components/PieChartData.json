@@ -1,0 +1,6 @@
+[{"Percentage": 0.3, "location": "Ontario", "Type": "negative"},
+ {"Percentage": 0.3, "location": "Ontario", "Type": "positive"},
+ {"Percentage": 0.4, "location": "Ontario", "Type": "neutral"},
+ {"Percentage": 0.3, "location": "Quebec", "Type": "negative"},
+ {"Percentage": 0.3, "location": "Quebec", "Type": "positive"},
+ {"Percentage": 0.4, "location": "Quebec", "Type": "neutral"}]
