@@ -6,17 +6,12 @@ import DonutJSON from "./PieChartData.json";
 import PieClass from "./PieClass";
 import * as d3 from "d3";
 import { render } from 'react-dom';
+import WordCloudJSON from "./wordcloud.json";
 import WordCloud from 'react-d3-cloud';
 import { scaleOrdinal } from 'd3-scale';
 import { schemeCategory10 } from 'd3-scale-chromatic';
 
-const data = [
-    { text: 'Hey', value: 1000 },
-    { text: 'lol', value: 200 },
-    { text: 'first impression', value: 800 },
-    { text: 'very cool', value: 1000000 },
-    { text: 'duck', value: 10 },
-  ];
+const data = WordCloudJSON
 const colors = [ 'red' , 'blue', 'green']
 const schemeCategory10ScaleOrdinal = scaleOrdinal(schemeCategory10);
 
@@ -26,18 +21,17 @@ class WordCloudChart extends Component {
     super(props);
     this.chRef = React.createRef();
   }
-
     render() {
         return (
           <>
             <WordCloud
                 data={data}
                 width={500}
-                height={100}
+                height={400}
                 font="Times"
                 fontStyle="italic"
                 fontWeight="bold"
-                fontSize={(word) => Math.log2(word.value) * 5}
+                fontSize={(word) => word.value * 5}
                 spiral="rectangular"
                 rotate={(word) => word.value % 360}
                 padding={5}

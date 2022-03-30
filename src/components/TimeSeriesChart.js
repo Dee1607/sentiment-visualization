@@ -2,7 +2,7 @@ import React, { Component, useState, useEffect } from "react";
 import "./CanadaMap.css";
 import Province from "./Province";
 import { withRouter } from "react-router-dom";
-import DonutJSON from "./PieChartData.json";
+import TimeSeriesCSV from '../components/Book1.csv'
 import PieClass from "./PieClass";
 import * as d3 from "d3";
 import { render } from 'react-dom';
@@ -34,22 +34,21 @@ class TimeSeriesChart extends Component {
         .attr("transform", `translate(${margin.left},${margin.top})`);
 
         //Read the data
-        d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/5_OneCatSevNumOrdered.csv").then( function(data) {
-
+        d3.csv(TimeSeriesCSV).then( function(data) {
         // group the data: I want to draw one line per group
-        const sumstat = d3.group(data, d => d.name); // nest function allows to group the calculation per level of a factor
+        const sumstat = d3.group(data, d => d.sentiment); // nest function allows to group the calculation per level of a factor
 
         // Add X axis --> it is a date format
         const x = d3.scaleLinear()
-        .domain(d3.extent(data, function(d) { return d.year; }))
+        .domain(d3.extent(data, function(d) { return d.tweet_timestamp; }))
         .range([ 0, width ]);
         svg.append("g")
         .attr("transform", `translate(0, ${height})`)
-        .call(d3.axisBottom(x).ticks(5));
+        .call(d3.axisBottom(x).ticks(70));
 
         // Add Y axis
         const y = d3.scaleLinear()
-        .domain([0, d3.max(data, function(d) { return +d.n; })])
+        .domain([0, d3.max(data, function(d) { return +d.happiness_intensity; })])
         .range([ height, 0 ]);
         svg.append("g")
         .call(d3.axisLeft(y));
@@ -67,8 +66,8 @@ class TimeSeriesChart extends Component {
             .attr("stroke-width", 1.5)
             .attr("d", function(d){
             return d3.line()
-                .x(function(d) { return x(d.year); })
-                .y(function(d) { return y(+d.n); })
+                .x(function(d) { return x(d.tweet_timestamp); })
+                .y(function(d) { return y(+d.happiness_intensity); })
                 (d[1])
             })
 
@@ -78,8 +77,8 @@ class TimeSeriesChart extends Component {
     render() {
         return (
         <>  
-            <h1>{this.props.location.state}</h1>
             <div ref={this.chRef}></div>
+            {/* <div>{console.log("DATA",TimeSeriesCSV)}</div> */}
         </>
         );
     }
