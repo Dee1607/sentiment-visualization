@@ -10,7 +10,6 @@ import DonutChart from './components/donutChart';
 import VisualizationChart from './components/VisualizationCharts'
 import CanadaJSON from "./components/CanadaMap.json";
 import DonutJSON from "./components/donutData.json";
-import { useEffect, useState } from "react/cjs/react.production.min";
 
 export default function App() { 
   const [visible, setVisible] = React.useState(false)
