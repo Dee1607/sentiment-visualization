@@ -1,0 +1,764 @@
+date,value,location
+2020-03-02,0,Alberta
+2020-03-03,0,Nova Scotia
+2020-03-04,0,Ontario
+2020-03-05,0,Saskatchewan
+2020-03-06,-75,Manitoba
+2020-03-07,0,Ontario
+2020-03-08,30,Nova Scotia
+2020-03-09,-83,New Brunswick
+2020-03-10,-34,New Brunswick
+2020-03-11,14,Nunavut
+2020-03-12,2,Northwest Territories
+2020-03-13,9,Northwest Territories
+2020-03-14,0,Northwest Territories
+2020-03-15,0,British Columbia
+2020-03-16,33,Nova Scotia
+2020-03-17,0,Quebec
+2020-03-18,-48,Newfoundland and Labrador
+2020-03-19,0,Ontario
+2020-03-20,0,Ontario
+2020-03-21,0,Saskatchewan
+2020-03-22,0,Northwest Territories
+2020-03-23,-81,Alberta
+2020-03-24,77,Prince Edward Island
+2020-03-25,58,Alberta
+2020-03-26,0,Ontario
+2020-03-27,-73,Alberta
+2020-03-28,0,Ontario
+2020-03-29,0,Ontario
+2020-03-30,6,Newfoundland and Labrador
+2020-03-31,22,Alberta
+2020-04-01,71,Yukon
+2020-04-02,0,Saskatchewan
+2020-04-03,-41,Manitoba
+2020-04-04,0,Quebec
+2020-04-05,-22,New Brunswick
+2020-04-06,-96,Newfoundland and Labrador
+2020-04-07,71,British Columbia
+2020-04-08,0,Newfoundland and Labrador
+2020-04-09,0,Newfoundland and Labrador
+2020-04-10,31,New Brunswick
+2020-04-11,0,Quebec
+2020-04-12,-13,Manitoba
+2020-04-13,55,Ontario
+2020-04-14,0,Ontario
+2020-04-15,-20,Yukon
+2020-04-16,0,Nunavut
+2020-04-17,8,Nunavut
+2020-04-18,0,Newfoundland and Labrador
+2020-04-19,0,Nova Scotia
+2020-04-20,0,Alberta
+2020-04-21,86,British Columbia
+2020-04-22,74,Yukon
+2020-04-23,0,Prince Edward Island
+2020-04-24,0,Quebec
+2020-04-25,0,New Brunswick
+2020-04-26,0,Manitoba
+2020-04-27,0,Quebec
+2020-04-28,66,Saskatchewan
+2020-04-29,57,Newfoundland and Labrador
+2020-04-30,0,Quebec
+2020-05-01,0,New Brunswick
+2020-05-02,46,New Brunswick
+2020-05-03,0,Alberta
+2020-05-04,0,Nunavut
+2020-05-05,-73,Newfoundland and Labrador
+2020-05-06,0,Saskatchewan
+2020-05-07,-5,British Columbia
+2020-05-08,0,Newfoundland and Labrador
+2020-05-09,-68,Manitoba
+2020-05-10,44,Prince Edward Island
+2020-05-11,4,Saskatchewan
+2020-05-12,0,Ontario
+2020-05-13,0,Yukon
+2020-05-14,49,Nunavut
+2020-05-15,-29,Prince Edward Island
+2020-05-16,34,Saskatchewan
+2020-05-17,0,Saskatchewan
+2020-05-18,-58,Ontario
+2020-05-19,0,Alberta
+2020-05-20,0,Saskatchewan
+2020-05-21,0,Quebec
+2020-05-22,-24,New Brunswick
+2020-05-23,0,Saskatchewan
+2020-05-24,33,Manitoba
+2020-05-25,6,Nova Scotia
+2020-05-26,-25,British Columbia
+2020-05-27,0,Northwest Territories
+2020-05-28,0,New Brunswick
+2020-05-29,-78,Northwest Territories
+2020-05-30,42,Northwest Territories
+2020-05-31,0,British Columbia
+2020-06-01,0,New Brunswick
+2020-06-02,-23,British Columbia
+2020-06-03,73,Alberta
+2020-06-04,80,Nunavut
+2020-06-05,0,Newfoundland and Labrador
+2020-06-06,-87,Nova Scotia
+2020-06-07,0,Prince Edward Island
+2020-06-08,52,Manitoba
+2020-06-09,0,New Brunswick
+2020-06-10,0,Saskatchewan
+2020-06-11,0,Alberta
+2020-06-12,55,Saskatchewan
+2020-06-13,84,Saskatchewan
+2020-06-14,0,Newfoundland and Labrador
+2020-06-15,-28,Yukon
+2020-06-16,0,Prince Edward Island
+2020-06-17,0,Manitoba
+2020-06-18,-30,Quebec
+2020-06-19,0,Nunavut
+2020-06-20,81,Northwest Territories
+2020-06-21,-59,Quebec
+2020-06-22,0,Newfoundland and Labrador
+2020-06-23,-9,Yukon
+2020-06-24,0,Quebec
+2020-06-25,0,British Columbia
+2020-06-26,0,Alberta
+2020-06-27,0,Yukon
+2020-06-28,0,Quebec
+2020-06-29,91,New Brunswick
+2020-06-30,0,Nunavut
+2020-07-01,80,Yukon
+2020-07-02,56,Nova Scotia
+2020-07-03,-40,Nunavut
+2020-07-04,48,Quebec
+2020-07-05,-53,Manitoba
+2020-07-06,0,Alberta
+2020-07-07,-6,Ontario
+2020-07-08,0,Newfoundland and Labrador
+2020-07-09,-85,Quebec
+2020-07-10,-58,Quebec
+2020-07-11,38,Alberta
+2020-07-12,-79,Manitoba
+2020-07-13,0,Nunavut
+2020-07-14,50,Nunavut
+2020-07-15,0,Saskatchewan
+2020-07-16,0,Alberta
+2020-07-17,0,Nova Scotia
+2020-07-18,0,Northwest Territories
+2020-07-19,-14,Northwest Territories
+2020-07-20,38,New Brunswick
+2020-07-21,79,Nova Scotia
+2020-07-22,-75,Newfoundland and Labrador
+2020-07-23,0,Alberta
+2020-07-24,73,Quebec
+2020-07-25,0,Prince Edward Island
+2020-07-26,-36,British Columbia
+2020-07-27,0,Nunavut
+2020-07-28,63,Nunavut
+2020-07-29,-61,Newfoundland and Labrador
+2020-07-30,0,Alberta
+2020-07-31,-37,Ontario
+2020-08-01,0,Nunavut
+2020-08-02,0,Alberta
+2020-08-03,-1,Manitoba
+2020-08-04,0,Manitoba
+2020-08-05,0,Northwest Territories
+2020-08-06,0,Ontario
+2020-08-07,16,Manitoba
+2020-08-08,22,Northwest Territories
+2020-08-09,-85,Nunavut
+2020-08-10,89,Ontario
+2020-08-11,0,Nunavut
+2020-08-12,0,Nunavut
+2020-08-13,0,Nunavut
+2020-08-14,0,Nova Scotia
+2020-08-15,0,British Columbia
+2020-08-16,0,Ontario
+2020-08-17,0,Newfoundland and Labrador
+2020-08-18,-25,Saskatchewan
+2020-08-19,2,Nova Scotia
+2020-08-20,0,Nova Scotia
+2020-08-21,0,Quebec
+2020-08-22,-73,British Columbia
+2020-08-23,0,Nunavut
+2020-08-24,0,Manitoba
+2020-08-25,-53,Quebec
+2020-08-26,0,New Brunswick
+2020-08-27,-94,Northwest Territories
+2020-08-28,91,Northwest Territories
+2020-08-29,0,Nunavut
+2020-08-30,40,Alberta
+2020-08-31,-36,Manitoba
+2020-09-01,-41,Nova Scotia
+2020-09-02,-40,Manitoba
+2020-09-03,0,Ontario
+2020-09-04,0,Nunavut
+2020-09-05,69,Nunavut
+2020-09-06,0,New Brunswick
+2020-09-07,0,Ontario
+2020-09-08,-100,Ontario
+2020-09-09,0,Newfoundland and Labrador
+2020-09-10,-27,Northwest Territories
+2020-09-11,94,Northwest Territories
+2020-09-12,0,Alberta
+2020-09-13,0,Nova Scotia
+2020-09-14,0,Northwest Territories
+2020-09-15,0,Manitoba
+2020-09-16,0,Quebec
+2020-09-17,0,Nunavut
+2020-09-18,0,Nova Scotia
+2020-09-19,0,Northwest Territories
+2020-09-20,53,Ontario
+2020-09-21,0,Ontario
+2020-09-22,-31,Alberta
+2020-09-23,47,British Columbia
+2020-09-24,45,Yukon
+2020-09-25,75,Newfoundland and Labrador
+2020-09-26,0,Ontario
+2020-09-27,10,Nova Scotia
+2020-09-28,0,Quebec
+2020-09-29,7,British Columbia
+2020-09-30,0,British Columbia
+2020-10-01,49,Nova Scotia
+2020-10-02,0,Yukon
+2020-10-03,-62,New Brunswick
+2020-10-04,92,Nova Scotia
+2020-10-05,0,Nunavut
+2020-10-06,0,Manitoba
+2020-10-07,72,Alberta
+2020-10-08,0,Northwest Territories
+2020-10-09,76,Newfoundland and Labrador
+2020-10-10,0,Nova Scotia
+2020-10-11,4,Ontario
+2020-10-12,-34,British Columbia
+2020-10-13,0,Nunavut
+2020-10-14,-94,British Columbia
+2020-10-15,0,Saskatchewan
+2020-10-16,0,Yukon
+2020-10-17,0,Quebec
+2020-10-18,52,Nunavut
+2020-10-19,0,Saskatchewan
+2020-10-20,-8,Nunavut
+2020-10-21,7,Quebec
+2020-10-22,0,Manitoba
+2020-10-23,0,New Brunswick
+2020-10-24,-80,Nova Scotia
+2020-10-25,0,Saskatchewan
+2020-10-26,0,Nunavut
+2020-10-27,17,British Columbia
+2020-10-28,94,Saskatchewan
+2020-10-29,0,Ontario
+2020-10-30,69,Northwest Territories
+2020-10-31,0,Prince Edward Island
+2020-11-01,0,Manitoba
+2020-11-02,0,Yukon
+2020-11-03,0,Manitoba
+2020-11-04,16,Newfoundland and Labrador
+2020-11-05,11,Ontario
+2020-11-06,0,Saskatchewan
+2020-11-07,0,New Brunswick
+2020-11-08,-7,Manitoba
+2020-11-09,0,Manitoba
+2020-11-10,-34,Manitoba
+2020-11-11,0,Prince Edward Island
+2020-11-12,-63,Manitoba
+2020-11-13,0,Saskatchewan
+2020-11-14,84,Prince Edward Island
+2020-11-15,0,Newfoundland and Labrador
+2020-11-16,0,Nunavut
+2020-11-17,0,Quebec
+2020-11-18,17,Manitoba
+2020-11-19,0,Prince Edward Island
+2020-11-20,0,New Brunswick
+2020-11-21,-67,Saskatchewan
+2020-11-22,-23,Yukon
+2020-11-23,0,Yukon
+2020-11-24,0,Newfoundland and Labrador
+2020-11-25,0,Saskatchewan
+2020-11-26,0,Northwest Territories
+2020-11-27,6,Northwest Territories
+2020-11-28,-27,Saskatchewan
+2020-11-29,0,Newfoundland and Labrador
+2020-11-30,0,Newfoundland and Labrador
+2020-12-01,-46,Newfoundland and Labrador
+2020-12-02,0,Quebec
+2020-12-03,-51,Ontario
+2020-12-04,26,Newfoundland and Labrador
+2020-12-05,60,Nova Scotia
+2020-12-06,35,Nunavut
+2020-12-07,79,Newfoundland and Labrador
+2020-12-08,0,Alberta
+2020-12-09,0,British Columbia
+2020-12-10,0,Saskatchewan
+2020-12-11,0,Yukon
+2020-12-12,-74,Nova Scotia
+2020-12-13,99,Saskatchewan
+2020-12-14,0,Saskatchewan
+2020-12-15,42,Manitoba
+2020-12-16,-31,British Columbia
+2020-12-17,0,New Brunswick
+2020-12-18,0,Nunavut
+2020-12-19,0,Prince Edward Island
+2020-12-20,0,Newfoundland and Labrador
+2020-12-21,0,Alberta
+2020-12-22,-94,Prince Edward Island
+2020-12-23,0,Manitoba
+2020-12-24,18,Prince Edward Island
+2020-12-25,0,Saskatchewan
+2020-12-26,0,Saskatchewan
+2020-12-27,0,Prince Edward Island
+2020-12-28,0,Ontario
+2020-12-29,47,Yukon
+2020-12-30,0,Northwest Territories
+2020-12-31,0,Quebec
+2021-01-01,0,Northwest Territories
+2021-01-02,0,Ontario
+2021-01-03,0,New Brunswick
+2021-01-04,0,Yukon
+2021-01-05,-78,Prince Edward Island
+2021-01-06,30,Northwest Territories
+2021-01-07,-15,Prince Edward Island
+2021-01-08,33,Newfoundland and Labrador
+2021-01-09,0,Nunavut
+2021-01-10,0,Newfoundland and Labrador
+2021-01-11,-78,Nova Scotia
+2021-01-12,-64,Yukon
+2021-01-13,0,Alberta
+2021-01-14,-21,Alberta
+2021-01-15,-42,Newfoundland and Labrador
+2021-01-16,-12,Nova Scotia
+2021-01-17,-69,Nova Scotia
+2021-01-18,0,Quebec
+2021-01-19,0,Saskatchewan
+2021-01-20,-83,Nunavut
+2021-01-21,0,Nova Scotia
+2021-01-22,0,Northwest Territories
+2021-01-23,0,Ontario
+2021-01-24,94,Prince Edward Island
+2021-01-25,94,Yukon
+2021-01-26,0,New Brunswick
+2021-01-27,-17,New Brunswick
+2021-01-28,0,Manitoba
+2021-01-29,76,British Columbia
+2021-01-30,-92,Alberta
+2021-01-31,0,Nova Scotia
+2021-02-01,-100,New Brunswick
+2021-02-02,-32,Quebec
+2021-02-03,0,Alberta
+2021-02-04,-12,New Brunswick
+2021-02-05,49,Nunavut
+2021-02-06,0,British Columbia
+2021-02-07,-84,Nunavut
+2021-02-08,-29,Yukon
+2021-02-09,0,British Columbia
+2021-02-10,27,Northwest Territories
+2021-02-11,0,British Columbia
+2021-02-12,-98,British Columbia
+2021-02-13,-20,Manitoba
+2021-02-14,-57,Saskatchewan
+2021-02-15,0,British Columbia
+2021-02-16,93,Manitoba
+2021-02-17,64,Yukon
+2021-02-18,-18,Nova Scotia
+2021-02-19,0,Nova Scotia
+2021-02-20,0,Saskatchewan
+2021-02-21,0,New Brunswick
+2021-02-22,-64,Nova Scotia
+2021-02-23,-23,Nunavut
+2021-02-24,-11,Ontario
+2021-02-25,0,Yukon
+2021-02-26,-62,New Brunswick
+2021-02-27,0,Nunavut
+2021-02-28,-11,Ontario
+2021-03-01,0,Nova Scotia
+2021-03-02,23,Newfoundland and Labrador
+2021-03-03,0,Prince Edward Island
+2021-03-04,0,Nunavut
+2021-03-05,79,Ontario
+2021-03-06,-74,Saskatchewan
+2021-03-07,-20,Nova Scotia
+2021-03-08,-69,Prince Edward Island
+2021-03-09,14,Prince Edward Island
+2021-03-10,80,Nova Scotia
+2021-03-11,33,Newfoundland and Labrador
+2021-03-12,0,Saskatchewan
+2021-03-13,0,Ontario
+2021-03-14,-90,British Columbia
+2021-03-15,29,Ontario
+2021-03-16,30,Quebec
+2021-03-17,2,Nova Scotia
+2021-03-18,0,Northwest Territories
+2021-03-19,0,Nunavut
+2021-03-20,0,Alberta
+2021-03-21,0,Prince Edward Island
+2021-03-22,0,Nova Scotia
+2021-03-23,48,British Columbia
+2021-03-24,0,Alberta
+2021-03-25,0,Quebec
+2021-03-26,73,New Brunswick
+2021-03-27,68,Newfoundland and Labrador
+2021-03-28,62,Prince Edward Island
+2021-03-29,-35,Newfoundland and Labrador
+2021-03-30,52,Ontario
+2021-03-31,-63,Yukon
+2021-04-01,61,Alberta
+2021-04-02,0,Newfoundland and Labrador
+2021-04-03,0,Ontario
+2021-04-04,-5,British Columbia
+2021-04-05,0,Manitoba
+2021-04-06,0,Alberta
+2021-04-07,-100,British Columbia
+2021-04-08,-19,Quebec
+2021-04-09,9,Newfoundland and Labrador
+2021-04-10,0,Nunavut
+2021-04-11,-12,Alberta
+2021-04-12,70,Ontario
+2021-04-13,93,Yukon
+2021-04-14,74,Manitoba
+2021-04-15,0,Quebec
+2021-04-16,0,New Brunswick
+2021-04-17,92,Yukon
+2021-04-18,0,New Brunswick
+2021-04-19,65,Yukon
+2021-04-20,-11,Nunavut
+2021-04-21,0,Ontario
+2021-04-22,0,British Columbia
+2021-04-23,0,Quebec
+2021-04-24,75,Alberta
+2021-04-25,-85,Saskatchewan
+2021-04-26,0,Manitoba
+2021-04-27,34,Alberta
+2021-04-28,0,Manitoba
+2021-04-29,0,Alberta
+2021-04-30,46,Newfoundland and Labrador
+2021-05-01,0,Nova Scotia
+2021-05-02,33,Nunavut
+2021-05-03,-22,Manitoba
+2021-05-04,-99,Nunavut
+2021-05-05,0,Manitoba
+2021-05-06,-82,Alberta
+2021-05-07,0,Northwest Territories
+2021-05-08,0,Newfoundland and Labrador
+2021-05-09,0,Quebec
+2021-05-10,-65,Ontario
+2021-05-11,0,New Brunswick
+2021-05-12,0,New Brunswick
+2021-05-13,0,Prince Edward Island
+2021-05-14,0,Alberta
+2021-05-15,0,Ontario
+2021-05-16,-28,Nova Scotia
+2021-05-17,0,Northwest Territories
+2021-05-18,-40,Prince Edward Island
+2021-05-19,-15,Ontario
+2021-05-20,0,New Brunswick
+2021-05-21,74,Manitoba
+2021-05-22,-45,Ontario
+2021-05-23,0,Quebec
+2021-05-24,0,Saskatchewan
+2021-05-25,-68,Quebec
+2021-05-26,79,Nunavut
+2021-05-27,-87,Nova Scotia
+2021-05-28,-80,New Brunswick
+2021-05-29,-98,Yukon
+2021-05-30,0,Nova Scotia
+2021-05-31,0,New Brunswick
+2021-06-01,-85,Saskatchewan
+2021-06-02,0,Northwest Territories
+2021-06-03,-96,Manitoba
+2021-06-04,0,Northwest Territories
+2021-06-05,0,Prince Edward Island
+2021-06-06,0,Saskatchewan
+2021-06-07,0,Yukon
+2021-06-08,86,Yukon
+2021-06-09,-46,Alberta
+2021-06-10,0,Quebec
+2021-06-11,0,Newfoundland and Labrador
+2021-06-12,0,Yukon
+2021-06-13,0,Saskatchewan
+2021-06-14,0,Ontario
+2021-06-15,-47,Alberta
+2021-06-16,-13,Saskatchewan
+2021-06-17,0,Saskatchewan
+2021-06-18,0,New Brunswick
+2021-06-19,0,Manitoba
+2021-06-20,46,Northwest Territories
+2021-06-21,0,Alberta
+2021-06-22,0,New Brunswick
+2021-06-23,-84,Newfoundland and Labrador
+2021-06-24,49,Manitoba
+2021-06-25,0,Prince Edward Island
+2021-06-26,-57,Prince Edward Island
+2021-06-27,0,Quebec
+2021-06-28,-86,Newfoundland and Labrador
+2021-06-29,0,Newfoundland and Labrador
+2021-06-30,0,Alberta
+2021-07-01,62,Yukon
+2021-07-02,80,New Brunswick
+2021-07-03,0,Ontario
+2021-07-04,0,Manitoba
+2021-07-05,97,Quebec
+2021-07-06,19,Nunavut
+2021-07-07,6,Nova Scotia
+2021-07-08,-23,Ontario
+2021-07-09,-95,Nova Scotia
+2021-07-10,0,Quebec
+2021-07-11,0,Quebec
+2021-07-12,0,Northwest Territories
+2021-07-13,-32,British Columbia
+2021-07-14,0,Quebec
+2021-07-15,0,Nunavut
+2021-07-16,32,Quebec
+2021-07-17,0,Nova Scotia
+2021-07-18,0,New Brunswick
+2021-07-19,-59,Newfoundland and Labrador
+2021-07-20,-47,Yukon
+2021-07-21,51,New Brunswick
+2021-07-22,0,Ontario
+2021-07-23,0,Prince Edward Island
+2021-07-24,-60,Nova Scotia
+2021-07-25,33,Saskatchewan
+2021-07-26,-55,Newfoundland and Labrador
+2021-07-27,0,Prince Edward Island
+2021-07-28,21,Nova Scotia
+2021-07-29,-65,Alberta
+2021-07-30,0,Quebec
+2021-07-31,0,Yukon
+2021-08-01,0,Ontario
+2021-08-02,0,Alberta
+2021-08-03,49,Newfoundland and Labrador
+2021-08-04,-86,Manitoba
+2021-08-05,-81,Nova Scotia
+2021-08-06,-28,Prince Edward Island
+2021-08-07,63,Nunavut
+2021-08-08,26,New Brunswick
+2021-08-09,-16,Prince Edward Island
+2021-08-10,0,Nunavut
+2021-08-11,0,Quebec
+2021-08-12,0,Alberta
+2021-08-13,-3,Nova Scotia
+2021-08-14,95,Saskatchewan
+2021-08-15,49,Prince Edward Island
+2021-08-16,0,Manitoba
+2021-08-17,-96,Yukon
+2021-08-18,33,Prince Edward Island
+2021-08-19,0,Saskatchewan
+2021-08-20,25,Nunavut
+2021-08-21,0,Manitoba
+2021-08-22,0,Yukon
+2021-08-23,0,Saskatchewan
+2021-08-24,0,Prince Edward Island
+2021-08-25,0,Prince Edward Island
+2021-08-26,0,Nunavut
+2021-08-27,96,Nunavut
+2021-08-28,-99,Yukon
+2021-08-29,0,British Columbia
+2021-08-30,0,Newfoundland and Labrador
+2021-08-31,-57,Newfoundland and Labrador
+2021-09-01,-49,Newfoundland and Labrador
+2021-09-02,0,Ontario
+2021-09-03,58,New Brunswick
+2021-09-04,35,Northwest Territories
+2021-09-05,0,Prince Edward Island
+2021-09-06,62,Nunavut
+2021-09-07,0,Nova Scotia
+2021-09-08,-2,Nova Scotia
+2021-09-09,-1,Nova Scotia
+2021-09-10,0,Newfoundland and Labrador
+2021-09-11,0,British Columbia
+2021-09-12,0,Newfoundland and Labrador
+2021-09-13,-39,Saskatchewan
+2021-09-14,0,Manitoba
+2021-09-15,0,British Columbia
+2021-09-16,0,Quebec
+2021-09-17,0,Manitoba
+2021-09-18,42,Nova Scotia
+2021-09-19,0,Manitoba
+2021-09-20,0,British Columbia
+2021-09-21,0,Ontario
+2021-09-22,0,New Brunswick
+2021-09-23,38,Northwest Territories
+2021-09-24,0,Ontario
+2021-09-25,-27,New Brunswick
+2021-09-26,-60,Manitoba
+2021-09-27,-37,Quebec
+2021-09-28,98,Manitoba
+2021-09-29,0,Nunavut
+2021-09-30,6,Nova Scotia
+2021-10-01,0,Quebec
+2021-10-02,-82,Yukon
+2021-10-03,0,Nova Scotia
+2021-10-04,53,Nova Scotia
+2021-10-05,89,Nova Scotia
+2021-10-06,0,Nova Scotia
+2021-10-07,-94,New Brunswick
+2021-10-08,96,Northwest Territories
+2021-10-09,57,Manitoba
+2021-10-10,31,Northwest Territories
+2021-10-11,95,Nova Scotia
+2021-10-12,84,Nova Scotia
+2021-10-13,0,Alberta
+2021-10-14,-13,British Columbia
+2021-10-15,0,Saskatchewan
+2021-10-16,0,Nunavut
+2021-10-17,98,Ontario
+2021-10-18,0,Yukon
+2021-10-19,-58,Ontario
+2021-10-20,-87,New Brunswick
+2021-10-21,22,Quebec
+2021-10-22,34,Newfoundland and Labrador
+2021-10-23,0,Prince Edward Island
+2021-10-24,22,Yukon
+2021-10-25,0,Nova Scotia
+2021-10-26,0,New Brunswick
+2021-10-27,0,Northwest Territories
+2021-10-28,-24,Saskatchewan
+2021-10-29,0,New Brunswick
+2021-10-30,0,Prince Edward Island
+2021-10-31,0,Nunavut
+2021-11-01,0,Northwest Territories
+2021-11-02,-83,Nunavut
+2021-11-03,-11,Quebec
+2021-11-04,0,Nunavut
+2021-11-05,0,New Brunswick
+2021-11-06,0,Nova Scotia
+2021-11-07,0,Yukon
+2021-11-08,0,Nunavut
+2021-11-09,-67,Yukon
+2021-11-10,0,Saskatchewan
+2021-11-11,0,Newfoundland and Labrador
+2021-11-12,4,Prince Edward Island
+2021-11-13,0,Nunavut
+2021-11-14,-62,Saskatchewan
+2021-11-15,0,Quebec
+2021-11-16,-64,New Brunswick
+2021-11-17,0,British Columbia
+2021-11-18,0,New Brunswick
+2021-11-19,0,Ontario
+2021-11-20,0,Northwest Territories
+2021-11-21,90,Ontario
+2021-11-22,0,Newfoundland and Labrador
+2021-11-23,58,Ontario
+2021-11-24,90,British Columbia
+2021-11-25,23,Prince Edward Island
+2021-11-26,-39,British Columbia
+2021-11-27,34,Alberta
+2021-11-28,-31,Nunavut
+2021-11-29,40,Yukon
+2021-11-30,12,New Brunswick
+2021-12-01,-65,Saskatchewan
+2021-12-02,-51,Prince Edward Island
+2021-12-03,83,Nunavut
+2021-12-04,0,Quebec
+2021-12-05,0,Northwest Territories
+2021-12-06,0,New Brunswick
+2021-12-07,-87,Quebec
+2021-12-08,0,Manitoba
+2021-12-09,0,British Columbia
+2021-12-10,0,Prince Edward Island
+2021-12-11,0,Saskatchewan
+2021-12-12,85,Ontario
+2021-12-13,0,Saskatchewan
+2021-12-14,0,Nunavut
+2021-12-15,0,Alberta
+2021-12-16,69,Yukon
+2021-12-17,-45,British Columbia
+2021-12-18,0,Ontario
+2021-12-19,0,Quebec
+2021-12-20,0,Nunavut
+2021-12-21,80,Quebec
+2021-12-22,0,Yukon
+2021-12-23,5,Manitoba
+2021-12-24,73,British Columbia
+2021-12-25,70,Saskatchewan
+2021-12-26,0,British Columbia
+2021-12-27,0,Quebec
+2021-12-28,0,Alberta
+2021-12-29,-10,Manitoba
+2021-12-30,0,Ontario
+2021-12-31,0,Nunavut
+2022-01-01,-11,Alberta
+2022-01-02,75,Northwest Territories
+2022-01-03,10,Newfoundland and Labrador
+2022-01-04,-7,Quebec
+2022-01-05,0,British Columbia
+2022-01-06,-49,Alberta
+2022-01-07,0,Newfoundland and Labrador
+2022-01-08,49,Newfoundland and Labrador
+2022-01-09,-76,Nunavut
+2022-01-10,69,Prince Edward Island
+2022-01-11,-97,Newfoundland and Labrador
+2022-01-12,3,New Brunswick
+2022-01-13,-10,Nunavut
+2022-01-14,0,Quebec
+2022-01-15,49,Newfoundland and Labrador
+2022-01-16,0,Newfoundland and Labrador
+2022-01-17,0,Nova Scotia
+2022-01-18,0,Northwest Territories
+2022-01-19,0,Nova Scotia
+2022-01-20,0,Nova Scotia
+2022-01-21,60,Manitoba
+2022-01-22,0,Manitoba
+2022-01-23,98,Quebec
+2022-01-24,0,Newfoundland and Labrador
+2022-01-25,4,Nunavut
+2022-01-26,26,Newfoundland and Labrador
+2022-01-27,38,Alberta
+2022-01-28,-69,Yukon
+2022-01-29,44,Quebec
+2022-01-30,-6,Newfoundland and Labrador
+2022-01-31,0,Saskatchewan
+2022-02-01,0,British Columbia
+2022-02-02,-35,Ontario
+2022-02-03,0,Alberta
+2022-02-04,0,Nunavut
+2022-02-05,21,Northwest Territories
+2022-02-06,96,British Columbia
+2022-02-07,-39,Newfoundland and Labrador
+2022-02-08,-8,Quebec
+2022-02-09,0,Northwest Territories
+2022-02-10,0,Ontario
+2022-02-11,0,British Columbia
+2022-02-12,0,Quebec
+2022-02-13,15,Manitoba
+2022-02-14,-21,Quebec
+2022-02-15,53,British Columbia
+2022-02-16,0,Quebec
+2022-02-17,-30,Nova Scotia
+2022-02-18,0,Manitoba
+2022-02-19,0,British Columbia
+2022-02-20,-35,Prince Edward Island
+2022-02-21,95,Nunavut
+2022-02-22,51,New Brunswick
+2022-02-23,-40,Ontario
+2022-02-24,0,Nunavut
+2022-02-25,0,Prince Edward Island
+2022-02-26,0,British Columbia
+2022-02-27,0,Nunavut
+2022-02-28,0,Quebec
+2022-03-01,0,Prince Edward Island
+2022-03-02,-85,Nunavut
+2022-03-03,0,Saskatchewan
+2022-03-04,0,Nunavut
+2022-03-05,0,Saskatchewan
+2022-03-06,0,Quebec
+2022-03-07,-77,New Brunswick
+2022-03-08,0,Yukon
+2022-03-09,0,Quebec
+2022-03-10,28,Manitoba
+2022-03-11,-91,Saskatchewan
+2022-03-12,-26,Manitoba
+2022-03-13,-1,Manitoba
+2022-03-14,0,New Brunswick
+2022-03-15,-28,Saskatchewan
+2022-03-16,0,Newfoundland and Labrador
+2022-03-17,35,Newfoundland and Labrador
+2022-03-18,32,Yukon
+2022-03-19,15,Prince Edward Island
+2022-03-20,0,British Columbia
+2022-03-21,56,Prince Edward Island
+2022-03-22,-26,Alberta
+2022-03-23,0,Ontario
+2022-03-24,0,Nova Scotia
+2022-03-25,-36,Prince Edward Island
+2022-03-26,0,New Brunswick
+2022-03-27,0,Alberta
+2022-03-28,0,Newfoundland and Labrador
+2022-03-29,0,Northwest Territories
+2022-03-30,-7,British Columbia
+2022-03-31,-31,Newfoundland and Labrador
+2022-04-01,0,Prince Edward Island
+2022-04-02,87,Ontario
+2022-04-03,0,New Brunswick

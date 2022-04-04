@@ -5,7 +5,9 @@ import PieChart from "./components/PieChart";
 import Header from "./container/Header"
 import Footer from "./container/Footer"
 import "./styles.css";
+import { Button } from "react-bootstrap";
 import DonutChart from './components/donutChart';
+import VisualizationChart from './components/VisualizationCharts'
 import CanadaJSON from "./components/CanadaMap.json";
 import DonutJSON from "./components/donutData.json";
 import { useEffect, useState } from "react/cjs/react.production.min";
@@ -16,15 +18,15 @@ export default function App() {
   const [data, setData] = React.useState([]);
   const [donutData, setDonutData] = React.useState([]);
 
-  // React.useEffect(() => {
-  //   const url = "https://api.opencovid.ca/timeseries";
-  //   fetch(url)
-  //     .then((response) => response.json())
-  //     .then((json) => setData(json['active']),
-  //     )
-  //     .catch((error) => console.log(error));
-  // }, []);
-  // console.log(donutData)
+  React.useEffect(() => {
+    const url = "https://api.opencovid.ca/timeseries";
+    fetch(url)
+      .then((response) => response.json())
+      .then((json) => setData(json['active']),
+      )
+      .catch((error) => console.log(error));
+  }, []);
+  console.log(donutData)
 
   function handleClick(e) {
     if(show == "Show"){
@@ -40,7 +42,7 @@ export default function App() {
   const Chart = () =>{
     return(
       <div>
-        <p>Chart</p>
+        <p>COMPLEMENTORY COVID-19 CASES BY PROVINCE</p>
         <DonutChart data={DonutJSON} />
       </div>
     )
@@ -63,24 +65,50 @@ export default function App() {
                   <DonutChart data={DonutJSON} />
                 </div>
               </Route>
-              <Route exact path="/pieChart">
+              {/* <Route exact path="/pieChart">
                 <div>
-                  <PieChart data={DonutJSON} />
+                  <PieChart />
+                </div>
+              </Route> */}
+              <Route exact path="/visualization">
+                <div>
+                  <VisualizationChart />
                 </div>
               </Route>
-              <Route path="/pieChart/:id">
+              <Route path="/visualization/:id">
                 <div>
-                  <PieChart data={DonutJSON} />
+                  <VisualizationChart />
                 </div>
               </Route>
             </Switch>
           </div>
+          <div className="row">
+          <div className="d-grid gap-2">
+            <Button variant="primary" size="lg" onClick={handleClick}>
+              {show} complimentory Visualization
+            </Button>
+            { visible ? <Chart /> : null }
+          </div>
+              
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <br />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <br />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <br />
+            </div>
+          </div>
           <Footer />              
         </Router>
       </div>
-
-      <button onClick={handleClick}>{show} Donut</button>
-      { visible ? <Chart /> : null }
 
     </div>
   );

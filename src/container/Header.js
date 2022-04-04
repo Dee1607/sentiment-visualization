@@ -5,9 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 class Header extends Component {
 	render() {
 		return (
-      <div style={{ width: 700, padding: 30 }}>
-            <Navbar bg="dark">
-              <Navbar.Brand href="/">
+      <div class="jumbotron" style={{ width: window.width, padding: 0 }}>
+            <Navbar bg="dark" style={{background:"black"}}>
+              <Navbar.Brand href="/" style={{color:"white"}}>
                 Sentimental Analysis Visualization
               </Navbar.Brand>
             </Navbar>

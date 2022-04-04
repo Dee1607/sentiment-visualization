@@ -1,18 +1,10 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { Component } from "react";
 import "./CanadaMap.css";
-import Province from "./Province";
 import { withRouter } from "react-router-dom";
-import DonutJSON from "./PieChartData.json";
-import PieClass from "./PieClass";
 import * as d3 from "d3";
-import { render } from 'react-dom';
-import WordCloudJSON from "./wordcloud.json";
-import WordCloud from 'react-d3-cloud';
 import { scaleOrdinal } from 'd3-scale';
 import { schemeCategory10 } from 'd3-scale-chromatic';
-
-const data = WordCloudJSON
-const colors = [ 'red' , 'blue', 'green']
+import { color } from "d3";
 const schemeCategory10ScaleOrdinal = scaleOrdinal(schemeCategory10);
 
 class WordCloudChart extends Component {
@@ -22,6 +14,24 @@ class WordCloudChart extends Component {
     this.chRef = React.createRef();
   }
     render() {
+        var tooltip = d3.select("#theChart")
+        .append("div")
+        .style("position", "absolute")
+        .style("visibility", "hidden")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "0px")
+        .style("border-radius", "5px")
+        .style("padding", "10px")
+        .style("box-shadow", "2px 2px 20px")
+        .style("opacity", "0.9")
+        .attr("id", "tooltip");
+
+        function handleMouseOver (event, d) {
+          d3.select('path').attr("fill", "orange");
+          tooltip.style("visibility", "visible");
+        };
+
         return (
           <>
             <WordCloud
@@ -41,6 +51,8 @@ class WordCloudChart extends Component {
                 console.log(`onWordClick: ${d.text}`);
                 }}
                 onWordMouseOver={(event, d) => {
+                  handleMouseOver()
+                  // event = (d, i) => schemeCategory10ScaleOrdinal(i)
                 console.log(`onWordMouseOver: ${d.text}`);
                 }}
                 onWordMouseOut={(event, d) => {
