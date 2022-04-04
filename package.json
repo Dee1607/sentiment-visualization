@@ -21,16 +21,19 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-social-icons": "^5.13.0",
+    "serve": "^13.0.2",
     "topojson-client": "3.1.0"
   },
   "devDependencies": {
     "typescript": "3.8.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "browserslist": [
     ">0.2%",

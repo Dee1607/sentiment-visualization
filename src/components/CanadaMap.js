@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import "./CanadaMap.css";
-import { DropdownButton, Dropdown, ButtonGroup } from "react-bootstrap";
-import Form from 'react-bootstrap/Form'
 import Province from "./Province";
 import "../../src/styles.css"
 import * as d3 from "d3";
-import { color } from "d3";
 const ListofData = ["covid" , "ukrain", "WFH"]
 
 class CanadaMap extends Component {
@@ -68,9 +65,9 @@ class CanadaMap extends Component {
         </div>
         <div className="col-md-4">
           <div>
-                <select value={value} onChange={this.handleChange}>
+                <select className="form-control" style={{"background":"aliceblue", fontVariant:"petite-caps"}} value={value} onChange={this.handleChange}>
                     {ListofData.map(option => (
-                         <option value={option}>{option} Data</option>
+                         <option className="form-control" style={{"background":"aliceblue", fontVariant:"petite-caps"}} value={option}>{option} Data</option>
                     ))}
                 </select>
               </div>
