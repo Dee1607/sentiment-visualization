@@ -1,11 +1,10 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { Component } from "react";
 import "./CanadaMap.css";
 import { withRouter } from "react-router-dom";
 import DonutJSON from "./PieChartData.json";
 import WordCloud from "./WordCloud";
 import PieChart from "./PieChart";
 import TimeSeriesChart from "./TimeSeriesChart";
-import TopicJSON from "./topics.json";
 import CovidPieData from '../data/covidData/CovidPieChart.json';
 import CovidWordCloudData from '../data/covidData/CovidWordCloud.json';
 import CovidTimeSeriesData from '../data/covidData/CovidTimeSeries.csv';
@@ -25,12 +24,9 @@ class VisualizationChart extends Component {
             TimeSeriesChart: null
         };
         this.PieChartDataFunction();
-        //this.WorldCloudDataFunction();
-        // this.TimeSeriesChartDataFunction();
     }
 
     PieChartDataFunction(){
-        const data = DonutJSON;
 
         const stateData = this.props.location.state.split("-")
         const province = stateData[0];

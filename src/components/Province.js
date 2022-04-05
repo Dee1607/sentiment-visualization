@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-import "./Province.css";
 
 class Province extends Component {
   constructor(props) {

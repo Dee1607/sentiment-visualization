@@ -162,7 +162,6 @@ d3.csv(typedata,
         <>  
             <h1 style={{fontFamily:"-moz-initial"}}>Sentiments over Time</h1>
             <div ref={this.chRef}></div>
-            {/* <div>{console.log("DATA",TimeSeriesCSV)}</div> */}
         </>
         );
     }

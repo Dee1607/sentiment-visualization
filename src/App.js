@@ -1,7 +1,6 @@
 import React from "react";
 import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
 import CanadaMap from "./components/CanadaMap";
-import PieChart from "./components/PieChart";
 import Header from "./container/Header"
 import Footer from "./container/Footer"
 import "./styles.css";
@@ -14,18 +13,6 @@ import DonutJSON from "./components/donutData.json";
 export default function App() { 
   const [visible, setVisible] = React.useState(false)
   const [show, setShow] = React.useState("Show")
-  const [data, setData] = React.useState([]);
-  const [donutData, setDonutData] = React.useState([]);
-
-  React.useEffect(() => {
-    const url = "https://api.opencovid.ca/timeseries";
-    fetch(url)
-      .then((response) => response.json())
-      .then((json) => setData(json['active']),
-      )
-      .catch((error) => console.log(error));
-  }, []);
-  console.log(donutData)
 
   function handleClick(e) {
     if(show == "Show"){
@@ -35,7 +22,6 @@ export default function App() {
       setVisible(false)
       setShow("Show")
     }
-    console.log(visible)
   }
 
   const Chart = () =>{
@@ -64,11 +50,7 @@ export default function App() {
                   <DonutChart data={DonutJSON} />
                 </div>
               </Route>
-              {/* <Route exact path="/pieChart">
-                <div>
-                  <PieChart />
-                </div>
-              </Route> */}
+
               <Route exact path="/visualization">
                 <div>
                   <VisualizationChart />
@@ -108,7 +90,6 @@ export default function App() {
           <Footer />              
         </Router>
       </div>
-
     </div>
   );
 }

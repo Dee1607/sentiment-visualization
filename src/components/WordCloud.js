@@ -1,18 +1,6 @@
-import React, {
-  Component,
-} from 'react';
-
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
-/**
- * Import styles
- */
-// import 'normalize.css';
 import './WordCloud.css';
-
-/**
- * Import Elements
- */
 import Cloud from './Cloud';
 import Sidebar from './Sidebar';
 
