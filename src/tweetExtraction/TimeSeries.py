@@ -7,8 +7,10 @@ import random
 from datetime import date, timedelta
 import csv
 
+# Tweeter Client class to extract tweet data for word Cloud
 class TwitterClient(object):
 
+    # initial function to store authentication details to login tweeter developer account
     def __init__(self):
 
         # Tweeter Authentication details
@@ -24,6 +26,7 @@ class TwitterClient(object):
         except:
             print("Error: Authentication Failed")
 
+    # remove URL from the tweet text data
     def removeUrl(self, string):
         string = str(string)
         string = re.sub(r'RT ', '', string, flags=re.MULTILINE)
@@ -47,6 +50,7 @@ class TwitterClient(object):
         string = re.sub(r"\d", "", string)
         return string
 
+    # Function to get the sentiment of the tweet data
     def get_tweet_sentiment(self, tweet):
         # create TextBlob object of passed tweet text
         analysis = TextBlob(self.removeNumbers(self.removeUrl(self.removeNoiseWords(tweet))))
@@ -59,6 +63,7 @@ class TwitterClient(object):
         else:
             return 'negative'
 
+    # Getting tweets
     def get_tweets(self, query):
         # list to store tweets
         tweets = []
@@ -83,6 +88,7 @@ class TwitterClient(object):
         # return tweets
         return tweets
 
+    # Fetching the tweets frequency
     def freq(str):
 
         # break the string into list of words
@@ -103,6 +109,9 @@ class TwitterClient(object):
             print('Frequency of', str2[i], 'is :', str.count(str2[i]))
 
 
+# # main function which will be called first while running this program
+# It create the client connection, fetch tweets, clean and process tweets 
+# and at the end store the,m in a perticular json format.
 def main():
     api = TwitterClient()
     tweets = api.get_tweets(query='ukrain ukraine')

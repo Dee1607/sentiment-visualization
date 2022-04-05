@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from 'react-bootstrap/Navbar';
 
+/**
+ * Header Clas Compinent
+ */
 class Header extends Component {
 	render() {
 		return (

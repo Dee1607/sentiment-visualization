@@ -3,12 +3,18 @@ import { withRouter } from "react-router-dom";
 import * as d3 from "d3";
 const colors = [ 'red' , 'blue', 'green']
  
+/**
+ * Pie chart Class to generate pie chart visualization
+ */
 class PieChart extends Component {
    
+  /**
+   * Construnctor to initialize the class wih all the pre defined data 
+   * @param {*} props
+   */
   constructor(props) {
     super(props);
     this.chRef = React.createRef();
-
   }
  
 componentDidMount(){
@@ -39,6 +45,7 @@ drawChart(){
       .value(d => d.Percentage )  
     const data_ready = pie(usableData)
  
+    // Creating a tooltip that can be used in svg  component body
     var tooltip = d3.select("body")
         .data(data_ready)
         .append("div")
@@ -48,6 +55,7 @@ drawChart(){
         .style("background-color", "silver")
         .text((d) => d.data.Percentage*100 + "% "+ d.data.type);
     
+    // Generating an svg for Pie chart wihh datas
     svg
       .selectAll()
       .data(data_ready)
@@ -76,7 +84,7 @@ drawChart(){
         svg.attr("transform", event.transform)
     }))
     
-      // shape helper to build arcs:
+    // shape helper to build arcs:
     var arcGenerator = d3.arc()
     .innerRadius(0)
     .outerRadius(radius)
@@ -86,7 +94,7 @@ drawChart(){
       .data(data_ready)
       .enter()
       .append('text')
-      .text(function(d){ return d.data.Percentage*100+ "% "+ d.data.type})
+      .text(function(d){ return Math.round(d.data.Percentage*100)+ "% "+ d.data.type})
       .attr("transform", function(d) { return "translate(" + arcGenerator.centroid(d) + ")";  })
       .style("text-anchor", "middle")
       .style("font-size", 17)

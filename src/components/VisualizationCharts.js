@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./CanadaMap.css";
 import { withRouter } from "react-router-dom";
-import DonutJSON from "./PieChartData.json";
 import WordCloud from "./WordCloud";
 import PieChart from "./PieChart";
 import TimeSeriesChart from "./TimeSeriesChart";
@@ -14,8 +13,16 @@ import UkraineTimeSeriesData from '../data/ukrainData/UkraineTimeSeries.csv';
 import WFHPieData from '../data/WFHData/WFHPieChart.json';
 import WFHWordCloudData from '../data/WFHData/WFHWordCloud.json';
 import WFHTimeSeriesData from '../data/WFHData/WFHTimeSeries.csv';
+
+/**
+ * Creating a  class combining the multiple visulalizaion
+ */
 class VisualizationChart extends Component {
 
+    /**
+     * Initializing the props at the entry of the class
+     * @param {Object} props 
+     */
     constructor(props){
         super(props);
         this.state = {
@@ -26,6 +33,9 @@ class VisualizationChart extends Component {
         this.PieChartDataFunction();
     }
 
+    /**
+     * Selecting a selective data as per the data selection from the drop down menu
+     */
     PieChartDataFunction(){
 
         const stateData = this.props.location.state.split("-")
@@ -34,14 +44,20 @@ class VisualizationChart extends Component {
         let pieData = [];
         let timeSeriesData = [];
         let wordCloudData = []; 
+
+        // Selecting Covid data
         if (dataOf == 'covid'){
             pieData = CovidPieData;
             timeSeriesData= CovidTimeSeriesData;
             wordCloudData=CovidWordCloudData;
+
+        // Select Work From Home data
         }else if (dataOf == 'WFH'){
             pieData = WFHPieData;
             timeSeriesData= WFHTimeSeriesData;
             wordCloudData=WFHWordCloudData;
+        
+        // Select Ukrain Data
         }else if (dataOf == 'ukrain'){
             pieData = UkrainePieData;
             timeSeriesData= UkraineTimeSeriesData;
@@ -55,15 +71,23 @@ class VisualizationChart extends Component {
             }
         });
 
+        
         let wordCloudDataProvince =[]
         wordCloudData.map((key) => {
             if(key.location == province){
                 wordCloudDataProvince.push(key);
             }
         });
+
+        // Storing  data into the state
         this.state.PieChart = pieDataProvince;
         this.state.WordCloud = wordCloudDataProvince;
     }
+
+    /**
+     * Rendering the Visualization of the multiple visualization
+     * @returns {ReactElement}
+     */
     render() {
     return (
       <>

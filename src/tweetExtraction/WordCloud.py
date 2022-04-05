@@ -7,9 +7,10 @@ import random
 import json
 from heapq import nlargest
 
-
+# Tweeter Client class to extract tweet data for word Cloud
 class TwitterClient(object):
 
+    # initial function to store authentication details to login tweeter developer account
     def __init__(self):
 
         # Tweeter Authentication details
@@ -25,6 +26,7 @@ class TwitterClient(object):
         except:
             print("Error: Authentication Failed")
 
+    # remove URL from the tweet text data
     def removeUrl(self, string):
         string = str(string)
         string = re.sub(r'RT ', '', string, flags=re.MULTILINE)
@@ -48,6 +50,7 @@ class TwitterClient(object):
         string = re.sub(r"\d", "", string)
         return string
 
+    # Function to get the sentiment of the tweet data
     def get_tweet_sentiment(self, tweet):
         # create TextBlob object of passed tweet text
         analysis = TextBlob(self.removeNumbers(self.removeUrl(self.removeNoiseWords(tweet))))
@@ -61,6 +64,7 @@ class TwitterClient(object):
             temp_sentiment = 'negative'
         return temp_sentiment
 
+    # getting the tweet data
     def get_tweets(self, query, lang, count):
         # list to store tweets
         tweets = []
@@ -84,7 +88,9 @@ class TwitterClient(object):
 
         return tweets
 
-
+# main function which will be called first while running this program
+# It create the client connection, fetch tweets, clean and process tweets 
+# and at the end store the,m in a perticular json format.
 def main():
     api = TwitterClient()
     tweets = api.get_tweets(query="WFH WorkFromHome", lang='en', count=1000)
@@ -93,6 +99,7 @@ def main():
     for tweet in tweets:
         tweet['location'] = random.choice(province_list)
 
+    # Arrays of positive, negative and nuetral tweets
     pos_tweet = []
     neg_tweet = []
     nut_tweet = []
@@ -108,6 +115,7 @@ def main():
                     'Newfoundland and Labrador', 'Prince Edward Island', 'Quebec', 'Saskatchewan', 'Yukon', 'Northwest Territories']
     final_data = []
 
+    # Generating the json formatted data
     for province in province_list:
         json_data = []
         words = ""
@@ -210,6 +218,7 @@ def main():
                             else:
                                 nut_json_data.append({'text': word, 'value': 1})
 
+        # Dumping data into json format
         for data in json_data:
             initial_data = {
                 "label": None,  # from data in json_data:

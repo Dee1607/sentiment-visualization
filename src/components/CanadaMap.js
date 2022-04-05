@@ -6,36 +6,55 @@ import * as d3 from "d3";
 const ListofData = ["covid" , "ukrain", "WFH"]
 
 class CanadaMap extends Component {
+
+  /**
+   * Constructor getting view box, key of the data, 
+   * and initiating the value as null for data 
+   * @param {Object} props 
+   */
   constructor(props) {
     super(props);
     this.state = {
       viewBox: this.props.viewBox,
-      selected: null,
       key:"covid",
       value:null
     };
+
+    // Data binding on select and on change
     this.onSelect = this.onSelect.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
+  /**
+   *  On ID selection setting a state of selected
+   */ 
   onSelect(id) {
     this.setState({ selected: id });
   }
 
-  onSelectData(option){
-    console.log("Option Selected", option);
-    this.state.key = "hi";
-  }
+  /**
+   * Handle change on data selection using drop down manu
+   * @param {Object} e 
+   */
   handleChange(e){
     // this.setState({ value: event });
     var data= e.target.value;
     this.setState({key :data});
   }
 
+  /**
+   * Randering the Canadian map with provinces
+   * @returns {ReactElement}Visual element on Web based UI
+   */
   render() {
-    const { mapJson, width, height } = this.props;
-    const { viewBox, selected,key,value } = this.state;
 
+    // initializing data from props for visualization and state
+    const { mapJson, width, height } = this.props;
+    const { viewBox, selected,value } = this.state;
+
+    /**
+     * Displaying the SVG elements and some web components on UI
+     */
     return (
       <>
       <div className="row">
@@ -61,7 +80,6 @@ class CanadaMap extends Component {
 
             <div style={{fontFamily:"-moz-initial"}}><b>T</b>weeter <b>D</b>ata</div>
           </h2>
-
         </div>
         <div className="col-md-4">
           <div>
@@ -73,8 +91,13 @@ class CanadaMap extends Component {
               </div>
         </div>
         <div className="col-md-5" style={{textAlign:"left"}}> 
+        {/* Creating SVG for Canadian map by generating each province from json data */}
           <svg width={width} height={height} viewBox={viewBox}>
+
+            {/* itereating json map to get coordinates of each province*/}
             {mapJson.map((province) => (
+
+              // Calling Province Component with the data and coordinates with id
               <Province
                 id={province.id}
                 d={province.d}

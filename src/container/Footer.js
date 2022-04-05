@@ -2,6 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { SocialIcon } from 'react-social-icons';
 
+/**
+ * Footer Class Component
+ */
 class Footer extends React.Component
 {
   render()

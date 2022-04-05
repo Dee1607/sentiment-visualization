@@ -1,19 +1,18 @@
-import React, {
-  Component,
-} from 'react';
-
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
-import {
-  enrichTopics,
-} from '../utils/dataprocessor';
-
+import { enrichTopics } from '../utils/dataprocessor';
 import d3Cloud from 'd3-cloud';
  
-/**
- * Render the cloud using D3. Not stateless, because async rendering of d3-cloud
+/** 
+ * Creating a class component to render the cloud using D3. 
  */
 export default class Cloud extends Component {
+
+  /**
+   * Constrinctor to set data into props and 
+   * setting up the initial state at the entry
+   * @param {Object} props 
+   */
   constructor(props) {
     super(props);
     this.state = {
@@ -24,7 +23,7 @@ export default class Cloud extends Component {
 
   /**
    * Process data. Add range of volumes and fontSizes
-   * @return {void} Will call setState
+   * @returns {SVGElement} Cloud component using D3 with react and svg elements
    */
   componentDidMount() {
     if (this.props.topics.length === 0) {
@@ -37,8 +36,8 @@ export default class Cloud extends Component {
       topics,
       width,
     } = this.props;
-
-    /** Start calculation of cloud */
+ 
+    // Cloud generated using d3 cloud functionality of react and d3
     d3Cloud()
       .size([width, height])
       .words(enrichTopics(topics, fontSizes).entities)
@@ -53,10 +52,12 @@ export default class Cloud extends Component {
   }
 
   /**
-   * Render cloud as svg
-   * @return {ReactElement} [description]
+   * Implmenting the visualization of CLoud combinig with D3
+   * @returns {ReactElement} Visualization of Cloud 
    */
   render() {
+
+    // initializing the needed data from the props.
     const {
       fontName,
       height,
@@ -66,6 +67,9 @@ export default class Cloud extends Component {
       width,
     } = this.props;
 
+    /**
+     *  Selecting if the data is in processing state
+     */
     if (this.state.isProcessing) {
       return (
         <div className="wordcloud__container_cloud">
@@ -75,9 +79,9 @@ export default class Cloud extends Component {
     }
 
     /**
-     * Build class names to highlight the selected component
-     * @param  {Object} item  Topic item
-     * @return {String}       Class names
+     * Generating a class to display the cloud components
+     * @param {*} item as an lable or text to be displayed on the Cloud
+     * @returns a foroper CSS formate that can be applied on each word of the cloud
      */
     const getClassNames = (item) => {
       let classNames = 'wordcloud__cloud_label';
@@ -90,6 +94,9 @@ export default class Cloud extends Component {
         classNames += ' wordcloud__cloud_label--color-grey';
       }
 
+      /**
+       *  Selecting a specific formate for the data inside cloud based on the sentiment
+       */ 
       if (
         selectedTopic !== null
         && selectedTopic.hasOwnProperty('id')
@@ -103,8 +110,12 @@ export default class Cloud extends Component {
     return (
       <div className="wordcloud__container_cloud">
         <div className="wordcloud__cloud">
+
+          {/* Creating an SVG element to generate the word cloud */}
           <svg width={width} height={height}>
             <g transform={`translate(${width / 2}, ${height / 2})`}>
+
+              {/* Iterating theough the cloud Dimentions to display proper data */}
               {this.state.cloudDimensions.map(item =>
                 <text
                   className={getClassNames(item)}
@@ -121,12 +132,15 @@ export default class Cloud extends Component {
             </g>
           </svg>
         </div>
-        {topics.length > this.state.cloudDimensions.length ? <p className="worcloud__hint">Some topics cannot be displayed, because of the available space.</p> : ''}
+        {/* {topics.length > this.state.cloudDimensions.length ? <p className="worcloud__hint">Some topics cannot be displayed, because of the available space.</p> : ''} */}
       </div>
     );
   }
 }
 
+/**
+ * Prototyping the cloud data to provide proper style
+ */
 Cloud.propTypes = {
   fontName: PropTypes.string.isRequired,
   fontSizes: PropTypes.array.isRequired,

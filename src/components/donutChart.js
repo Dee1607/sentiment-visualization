@@ -3,39 +3,49 @@ import * as d3 from 'd3';
 import d3moji from 'd3moji'
 const colors = [ '#8ce8ad', '#57e188', '#34c768', '#2db757', '#27acaa', '#42c9c2', '#60e6e1', '#93f0e6', '#87d3f2', '#4ebeeb', '#35a4e8', '#188ce5', '#542ea5', '#724bc3', '#9c82d4', '#c981b2', '#b14891', '#ff6d00', '#ff810a', '#ff9831', '#ffb46a', '#ff9a91', '#ff736a', '#f95d54', '#ff4136', '#c4c4cd' ];
  
+/**
+ * Donut class to generate the donut data chart
+ */
 class DonutChart extends Component {
 
+    /**
+     * Construnctor to get the props data and creating a 
+     * reference for the svg component while entry
+     * @param {Object} props 
+     */
     constructor(props) {
         super(props);
         this.chRef = React.createRef();
     }
- 
-    // Chart load after component Mount
+    
+    /**
+     * Implments the functionality inside the quots each time it renders
+     */
     componentDidMount() {
         this.drawChart()
     }
  
-    // DrawChart
+    /**
+     * DrawChart functionality to create chart with svg elememt and react
+     */
     drawChart(){
         // Create dummy data
         const {data} = this.props;
-        // console.log(data)
 
         const svgContainer = d3.select(this.chRef.current).node();
         const width  = svgContainer.getBoundingClientRect().width;
         const height = width;
         const margin = 15;
         let radius = Math.min(width, height) / 2  - margin;
-        // legend Position
         let legendPosition = d3.arc().innerRadius(radius/1.75).outerRadius(radius);
 
-        // Create SVG
+        // Create SVG element
         const svg  = d3.select(this.chRef.current)
         .append('svg')
         .attr("width", '30%')
         .attr("height", '30%')
             .attr('viewBox', '0 0 ' + width + ' ' + width )
-        //.attr('preserveAspectRatio','xMinYMin')
+        .attr('preserveAspectRatio','xMinYMin')
         .append("g")
         .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
  
@@ -43,7 +53,8 @@ class DonutChart extends Component {
             .value( d => d.percentage )
         let data_ready = pie(data)
         console.log(data)
-        // Donut partition  
+
+        // Donut partition between each data
         svg
         .selectAll('whatever')
         .data(data_ready)
@@ -59,7 +70,7 @@ class DonutChart extends Component {
         .style("opacity", "0.8")
  
  
-      // Legend group and legend name
+      // Svg group of each slices and lables
        svg
         .selectAll('mySlices')
         .data(data_ready)
@@ -75,7 +86,7 @@ class DonutChart extends Component {
         .style("fill", '#222')
         .style("font-size", 14);
  
-       //Label for value
+       // SVG lengents for each data point value
         svg
         .selectAll('.legend-g')
         .append('text')
@@ -85,6 +96,7 @@ class DonutChart extends Component {
         .style("text-anchor", "middle")
         .attr("y", 16 );
 
+        // Path to draw using SVG
         var path = svg.selectAll('path')
         .data(pie(data))
         .enter()
@@ -148,6 +160,7 @@ class DonutChart extends Component {
  
     render() {
         return <>
+            {/* Reference to display svg on this div */}
             <div ref={this.chRef}></div> 
             <script src="/Users/deeppatel/Desktop/Visualization/Project/csci6406_project/node_modules/d3/dist/d3.js"></script>
             <script src="/Users/deeppatel/Desktop/Visualization/Project/csci6406_project/node_modules/d3moji/d3moji.js"></script>
